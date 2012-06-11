@@ -1,0 +1,122 @@
+/*Frog Viewer*/
+#moo_viewer {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    font-family: Verdana;
+    font-size: 11px;
+    color: #ccc;
+    z-index: 2001;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#moo_viewer_controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 32px;
+    padding-right: 32px;
+}
+    #moo_viewer_controls div {
+        float: right;
+    }
+    #moo_viewer_controls .image-count {
+        right: 182px;
+        position: absolute;
+        top: 8px;
+        height: 24px;
+        background: #444;
+        border: 1px solid #666;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 0 4px;
+    }
+    #moo_viewer_controls > div:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        background: url('../i/viewerClose.png') left top no-repeat;
+        cursor: pointer;
+    }
+        #moo_viewer_controls > div:last-child:hover {
+            background: url('../i/viewerClose.png') left bottom no-repeat;
+        }
+    #moo_viewer_controls ul {
+        margin: 0;
+        margin-right: 28px;
+        margin-top: 8px;
+        list-style-type: none;
+        padding: 0;
+    }
+        #moo_viewer_controls ul li {
+            display: inline-block;
+            width: 25px;
+            height: 20px;
+            margin-right: 1px;
+            border: 1px solid #404141;
+            cursor: pointer;
+        }
+        #moo_viewer_controls ul li:first-child {
+            border-radius: 4px 0 0 4px;
+            -webkit-border-radius: 4px 0 0 4px;
+            -moz-border-radius: 4px 0 0 4px;
+        }
+        #moo_viewer_controls ul li:last-child {
+            border-radius: 0 4px 4px 0;
+            -webkit-border-radius: 0 4px 4px 0;
+            -moz-border-radius: 0 4px 4px 0;
+        }
+#moo_viewer .leanback-player-video {
+    margin: auto;
+    text-align: center;
+}
+#moo_viewer canvas {
+    cursor: move;
+}
+.moo-prev { background: url('../i/viewerControls.png') left top no-repeat; }
+.moo-next { background: url('../i/viewerControls.png') left -20px no-repeat; }
+.moo-window { background: url('../i/viewerControls.png') left -40px no-repeat; }
+.moo-original { background: url('../i/viewerControls.png') left -60px no-repeat; }
+.moo-download { background: url('../i/viewerControls.png') left -80px no-repeat; }
+.moo-url { background: url('../i/viewerControls.png') left -100px no-repeat; }
+
+.moo-prev:hover { background: url('../i/viewerControls.png') right top no-repeat; }
+.moo-next:hover { background: url('../i/viewerControls.png') right -20px no-repeat; }
+.moo-window:hover { background: url('../i/viewerControls.png') right -40px no-repeat; }
+.moo-original:hover { background: url('../i/viewerControls.png') right -60px no-repeat; }
+.moo-download:hover { background: url('../i/viewerControls.png') right -80px no-repeat; }
+.moo-url:hover { background: url('../i/viewerControls.png') right -100px no-repeat; }
+/*Frog Shelf*/
+#moo_shelf {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 53px;
+    border-top: #202020;
+    padding: 2px;
+}
+#moo_shelf_thumbnails {
+    height: 48px;
+}
+#moo_shelf img {
+    margin: 0 4px;
+}
+#moo_shelf_trigger {
+    position: absolute;
+    top: 0;
+    left: -28px;
+    width: 28px;
+    height: 53px;
+    background: url('../i/shelfIcon.png') top left no-repeat;
+}
