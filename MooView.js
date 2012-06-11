@@ -20,6 +20,7 @@ provides: [MooView]
 var MooView = new Class({
     Implements: Events,
     initialize: function() {
+        // init function
         this.origin = {x: 0, y: 0};
         this.xform = Matrix.I(3);
         this.main = Matrix.I(3);
